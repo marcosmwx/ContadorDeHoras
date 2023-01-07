@@ -11,14 +11,12 @@ export default function DefinirAmenos(props) {
 
   data.addHours(-props.hora);
   data.addMinutes(-props.minutos);
-
+  const horaDefinirAmenos = (`A essa hora e minutos atrás era: ${data.getHours().toString().padStart(2, "0")}:${data.getMinutes().toString().padStart(2, "0")}`)
   return (
     <div>
-      <h5>
-        Hora a menos :{data.getHours().toString().padStart(2, "0")}:
-        {data.getMinutes().toString().padStart(2, "0")}:
-        {data.getSeconds().toString().padStart(2, "0")}
-      </h5>
+      <h3>
+        {horaDefinirAmenos}
+      </h3>
     </div>
   );
 }

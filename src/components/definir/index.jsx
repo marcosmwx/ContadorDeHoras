@@ -1,6 +1,4 @@
-
 export default function Definir(props) {
-  
   Date.prototype.addHours = function (valorHoraDef) {
     this.setHours(this.getHours() + valorHoraDef);
   };
@@ -10,19 +8,16 @@ export default function Definir(props) {
   };
 
   const data = new Date();
-  
 
-    data.addHours(+props.hora);
-    data.addMinutes(+props.minutos);
-   
+  data.addHours(+props.hora);
+  data.addMinutes(+props.minutos);
+  const definirAmais = `Daqui a essa hora e minutos vai ser: ${data
+    .getHours()
+    .toString()
+    .padStart(2, "0")}: ${data.getMinutes().toString().padStart(2, "0")}`;
   return (
     <div>
-      <h5>Hora a mais  
-        : {data.getHours().toString().padStart(2, "0")}:
-        {data.getMinutes().toString().padStart(2, "0")}:
-        {data.getSeconds().toString().padStart(2, "0")}
-      </h5>
-
+      <h3>{definirAmais}</h3>
     </div>
   );
 }

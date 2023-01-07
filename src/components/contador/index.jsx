@@ -15,7 +15,7 @@ function Contador() {
   });
   return (
     <div>
-      <h3> {hora} </h3>
+      <h2> {hora} </h2>
     </div>
   );
 }

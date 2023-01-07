@@ -9,6 +9,7 @@ function Horario() {
 
   return (
     <div>
+      <h3>Defina a Hora</h3>
       <form action="#">
         <input
           type={"number"}
@@ -17,8 +18,8 @@ function Horario() {
           value={hora}
           onChange={(e) => setHora(e.target.value)}
           placeholder="Horas"
-        ></input>:
-
+        ></input>
+        :
         <input
           type={"number"}
           min="00"
@@ -27,7 +28,6 @@ function Horario() {
           onChange={(e) => setMinutos(e.target.value)}
           placeholder="Minutos"
         ></input>
-
         <Definir hora={hora} minutos={minutos} />
         <DefinirAmenos hora={hora} minutos={minutos} />
       </form>
