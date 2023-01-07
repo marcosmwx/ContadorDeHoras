@@ -10,19 +10,19 @@ function App() {
         <h1>Contador de Horas</h1>
 
         <Contador />
-      </div>
-      <div className="AmaisMenos">
-        <div className="Horario">
-          <Horario />
-        </div>
-        <div className="Relogio">
-          <Relogio />
-        </div>
-      </div>
 
-      <a className="github" href="https://github.com/marcosmwx">
-        by: Marcos Willian
-      </a>
+        <div className="AmaisMenos">
+          <div className="Horario">
+            <Horario />
+          </div>
+          <div className="Relogio">
+            <Relogio />
+          </div>
+        </div>
+        <a className="github" href="https://github.com/marcosmwx">
+          Github: Marcos Willian
+        </a>
+      </div>
     </div>
   );
 }

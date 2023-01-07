@@ -14,7 +14,7 @@ function Horario() {
         <input
           type={"number"}
           min="00"
-          max="100"
+          max="24"
           value={hora}
           onChange={(e) => setHora(e.target.value)}
           placeholder="Horas"
@@ -23,7 +23,7 @@ function Horario() {
         <input
           type={"number"}
           min="00"
-          max="100"
+          max="60"
           value={minutos}
           onChange={(e) => setMinutos(e.target.value)}
           placeholder="Minutos"

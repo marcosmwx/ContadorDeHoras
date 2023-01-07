@@ -17,13 +17,13 @@ export default function RelogioDefinirAMenos(props) {
   const datay = new Date(datax.getTime());
   datay.subtractMinutes(minutos);
   datay.subtractHours(horas);
-  const horadeSair = `Voce de Sair de casa as ${datay
+  const horadeSair = `Você deve Sair de casa as ${datay
     .getHours()
     .toString()
     .padStart(2, "0")}:${datay.getMinutes().toString().padStart(2, "0")}`;
   return (
     <div>
-      <h3>Qual é o tempo que voce leva até la?</h3>
+      <h3>Qual é o tempo que você leva até la?</h3>
       <form action="#">
         <input
           type={"number"}
@@ -31,6 +31,8 @@ export default function RelogioDefinirAMenos(props) {
           onChange={(e) => setHoras(e.target.value)}
           placeholder="Horas"
           style={{ width: "50px" }}
+          min="00"
+          max="24"
         ></input>
         :
         <input
@@ -39,6 +41,8 @@ export default function RelogioDefinirAMenos(props) {
           onChange={(e) => setMinutos(e.target.value)}
           placeholder="Minutos"
           style={{ width: "50px" }}
+          min="00"
+          max="60"
         ></input>
       </form>
       <h4>{horadeSair}</h4>
