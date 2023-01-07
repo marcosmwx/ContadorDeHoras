@@ -20,7 +20,7 @@ function App() {
           </div>
         </div>
         <a className="github" href="https://github.com/marcosmwx">
-          Github: Marcos Willian
+          by: Marcos Willian
         </a>
       </div>
     </div>
